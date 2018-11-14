@@ -116,21 +116,7 @@ class Protokol():
             "wiedzę na temat dziecka.",
             size=10
         )
-        normal_left(
-            self.document,
-            referent_speech(find_staff(self.values, 'psycholog'))
-        )
-        normal_left(
-            self.document,
-            referent_speech(find_staff(self.values, 'pedagog'))
-        )
-        normal_left(
-            self.document,
-            "{} się z dokumentacją"
-            " i nie zgłasza zastrzeżeń".format(
-                referent_speech1(find_staff(self.values, 'lekarz'))
-            )
-        )
+
         add_line(self.document, 10)
         normal_left(
             self.document,

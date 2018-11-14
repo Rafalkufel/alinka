@@ -178,6 +178,9 @@ class MainWindow:
         team = values['staff']['team']
         team.extend([None] * (9 - len(team)))
         for i, member in enumerate(team, 1):
+            # import pdb; pdb.set_trace()
+            if member == None:
+                continue
             setattr(
                 staff_meeting,
                 'member{}'.format(i),

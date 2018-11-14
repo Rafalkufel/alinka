@@ -86,6 +86,10 @@ def find_staff(values, specialization):
         for i in values['staff']['team']:
             if specialization in i[1]:
                 list_of_staff.append(i)
+    elif specialization == "pedagog":
+        for i in values['staff']['team']:
+            if specialization in i[1]:
+                list_of_staff.append(i)
     else:
         for i in values['staff']['team']:
             if not (
